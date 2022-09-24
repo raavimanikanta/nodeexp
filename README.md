@@ -50,7 +50,26 @@ npm start
 
 Open a web browser and type the following address:
 
-http://localhost:3000
+http://localhost:3000   
+
+ # About the project
+
+
+
+Inside this project I have passed  the simple html tag as a response by using node.js .
+
+
+
+And after that I have created Dockerfile to build the docker image by using this command
+```
+docker build -t <image_name> .
+
+```
+After that to create a container for that image, so we can run that image, we need to use the below command
+```
+docker run -d -p 3000:3000 --name <container_name> <image_name>
+```
+Output of my Express web application
 
 And you should see your Express web application
 
